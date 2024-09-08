@@ -2,9 +2,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import ejs from 'ejs';
 
-
 const app = express();
-const port = 3000 || process.env.PORT;
+const port = 3000;
 
 var formattedDate = "August 7, 2024";
 var formattedTime = "11:30 AM";
