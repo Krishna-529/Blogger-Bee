@@ -4,7 +4,9 @@ import ejs from 'ejs';
 
 
 const app = express();
-const port = 3000 || process.env.PORT;var formattedDate = "August 7, 2024";
+const port = 3000 || process.env.PORT;
+
+var formattedDate = "August 7, 2024";
 var formattedTime = "11:30 AM";
 
 // var alertOn = true;
