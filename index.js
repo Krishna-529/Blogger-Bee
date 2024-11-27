@@ -69,9 +69,11 @@ app.post("/submit", (req, res) => {
     blogg = new blog(title, author, blogText, formattedDate, formattedTime);
     blogs.push(blogg);
     UpdateLength();
+    res.redirect('/?added=true')
   }
   
-  res.render("submit.ejs", {b});
+  // res.render("submit.ejs", {b});
+  res.redirect('/?added=false');
 });
 
 
